@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterFragment">
+
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.arif.starwarscharacter.fragment.CharacterFragment"
+        android:label="fragment_character"
+        tools:layout="@layout/fragment_character" >
+        <action
+            android:id="@+id/action_characterFragment_to_characterDetailsFragment"
+            app:destination="@id/characterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetFragment"
+        android:name="com.arif.starwarscharacter.fragment.PlanetFragment"
+        android:label="fragment_planet"
+        tools:layout="@layout/fragment_planet" >
+        <action
+            android:id="@+id/action_planetFragment_to_characterDetailsFragment"
+            app:destination="@id/characterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/starShipFragment"
+        android:name="com.arif.starwarscharacter.fragment.StarShipFragment"
+        android:label="fragment_star_ship"
+        tools:layout="@layout/fragment_star_ship" >
+        <action
+            android:id="@+id/action_starShipFragment_to_characterDetailsFragment"
+            app:destination="@id/characterDetailsFragment" />
+        <action
+            android:id="@+id/action_starShipFragment_to_characterDetailsFragment2"
+            app:destination="@id/characterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailsFragment"
+        android:name="com.arif.starwarscharacter.details_page.DetailsFragment"
+        android:label="fragment_character_details"
+        tools:layout="@layout/fragment_details" />
+
+</navigation>

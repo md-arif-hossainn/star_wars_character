@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StarshipDetailsFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white"
+            android:background="@color/purple_500"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/myToolbar"
+            android:elevation="8dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:background="@drawable/card_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/detailsCardView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="name" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/model"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="model" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/manufacturer"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="manufacturer" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/costInCredits"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="costInCredits" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/length"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="length" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/maxAtmospheringSpeed"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="maxAtmospheringSpeed" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/crew"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="crew" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/passengers"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="passengers" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/consumables"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="consumables" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/hyperdriveRating"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="hyperdriveRating" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</layout>
